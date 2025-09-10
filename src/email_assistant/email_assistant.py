@@ -1,15 +1,15 @@
 from langgraph.prebuilt import create_react_agent
 from langchain.chat_models import init_chat_model
-
-def suma():
-    """this is sum tools"""
-    pass
+from src.email_assistant.tools.default.email_tools import search_files
 
 
-model = init_chat_model()
+model = init_chat_model("openai:gpt-4.1")
+
+system_prompt = """You are a helpful assistant that can search for files."""
 
 graph = create_react_agent(
-    tools=[suma],
-    model=model
+    model=model,
+    tools=[search_files],
+    prompt=system_prompt
 
 )

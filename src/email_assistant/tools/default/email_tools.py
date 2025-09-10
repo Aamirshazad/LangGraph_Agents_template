@@ -1,13 +1,7 @@
-# Stubs for email_tools to resolve import error
+from langchain_core.tools import tool
+import os
 
-def write_email(*args, **kwargs):
-    """Stub for write_email function."""
-    pass
-
-def triage_email(*args, **kwargs):
-    """Stub for triage_email function."""
-    pass
-
-class Done:
-    """Stub for Done class."""
-    pass
+@tool
+def search_files(directory: str, pattern: str) -> list[str]:
+    """Searches for files in a directory matching a pattern."""
+    return [f for f in os.listdir(directory) if pattern in f]
