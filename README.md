@@ -1,18 +1,23 @@
 # LangGraph Agent Template
 
-A starter template for building ambient agents with LangGraph. This repository provides a clean project layout, examples, and guidance for creating stateful multi-actor applications powered by LLMs.
+A comprehensive starter template for building intelligent agents with LangGraph. This repository provides a structured project layout, example implementations, and comprehensive documentation for creating stateful multi-actor applications powered by LLMs.
 
 ## Highlights
 
-- Built around LangGraph and LangChain patterns
-- Example agents and tools you can extend
-- Notebook-based demos for quick experimentation
-- Designed for local development and containerized deployment
+- **Multi-LLM Support**: Claude (Anthropic), GPT-4 (OpenAI), and Gemini (Google) integration patterns
+- **Comprehensive CI/CD**: GitHub Actions workflows for testing, code review, and integration
+- **Claude Code Integration**: Specialized agents for code review, architecture, and quality assessment
+- **Development Tools**: Pre-configured with mypy, ruff, pytest, and Jupyter notebooks
+- **Docker Support**: Ready for containerized deployment with docker-compose
+- **Evaluation Framework**: Built-in agent evaluation and testing capabilities
 
 ## Requirements
 
-- Python 3.12+
-- OpenAI API key
+- Python 3.12+ 
+- **Multiple LLM API Keys** (configure as needed):
+  - OpenAI API key (for GPT models)
+  - Anthropic API key (for Claude models) 
+  - Google API key (for Gemini models)
 - LangSmith API key (optional but recommended for tracing)
 
 ## Installation

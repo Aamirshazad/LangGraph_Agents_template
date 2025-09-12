@@ -364,4 +364,4 @@ Always use documentation tools before implementing LangGraph code (the API evolv
 - Example: From `https://langchain-ai.github.io/langgraph/tutorials/get-started/langgraph-platform/setup/` with link `../../langgraph-platform/local-server`
   - Go up two levels: `https://langchain-ai.github.io/langgraph/tutorials/get-started/`
   - Append path: `https://langchain-ai.github.io/langgraph/tutorials/get-started/langgraph-platform/local-server`
-- If you encounter an HTTP 404 error, the constructed URL is likely incorrect—rebuild it carefully
+- If you encounter an HTTP 404 error, the constructed URL is likely incorrect—rebuild it carefull
