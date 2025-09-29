@@ -2,6 +2,8 @@ from pydantic import BaseModel, Field
 from typing_extensions import TypedDict, Literal
 from langgraph.graph import MessagesState
 
+
+
 class RouterSchema(BaseModel):
     """Analyze and route it according to its content."""
     pass

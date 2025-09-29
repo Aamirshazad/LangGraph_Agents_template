@@ -1,8 +1,7 @@
 {
     "dockerfile_lines": [],
     "graphs": {
-      "email_assistant": "./src/email_assistant/email_assistant.py:graph",
-      "simple_agent": "./src/simple_agent/simple_agent.py:graph"
+      "email_assistant": "./src/MyAgent/agent.py:graph"
     },
     "python_version": "3.12",
     "env": ".env",

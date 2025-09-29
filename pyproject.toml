@@ -1,13 +1,11 @@
 [project]
 name = "agents_template"
 version = "0.1.0"
-description = "Build an assistant from scratch"
+description = "Build an Agent "
 requires-python = ">=3.12, <3.13"
 dependencies = [
-    "langchain>=0.3.9",
     "langchain-core>=0.3.59",
     "langchain-openai",
-    "langgraph>=0.4.2",
     "langsmith[pytest]>=0.3.4",
     "pandas",
     "matplotlib",
@@ -22,6 +20,8 @@ dependencies = [
     "pyppeteer",
     "html2text",
     "rich",
+    "langchain>=1.0.0a9",
+    "langgraph>=1.0.0a3",
 ]
 
 [project.optional-dependencies]
@@ -32,10 +32,13 @@ requires = ["setuptools>=73.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["email_assistant"]
+# Use setuptools' package finder to locate packages under src/
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.setuptools.package-dir]
-"email_assistant" = "src/email_assistant"
+
+"" = "src"
 
 [tool.setuptools.package-data]
 "*" = ["py.typed"]
